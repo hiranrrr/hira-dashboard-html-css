@@ -61,6 +61,7 @@ ul{
   top: 0;
   border-bottom: 1px solid #ddd;
   margin-top: 20px;
+  background-color: #fffbfb;
 
 }
 
@@ -106,7 +107,7 @@ ul{
 
 .bildirim:hover,
 .avatarbuton:hover{
-background-color: lightgray;
+background-color: rgb(192, 153, 153);
 } 
 
 @media (max-width: 1024px) {
@@ -219,6 +220,140 @@ background-color: lightgray;
   gap: 15px;
   height: 200px;
 }
+
+.bar {
+  flex: 1;
+  background-color: rgb(145, 41, 76);
+  border-radius: 6px 6px 0 0;
+  color: white;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 6px;
+}
+
+.bar:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .grafik {
+    gap: 8px;
+    height: 160px;
+  }
+
+  .bar {
+    font-size: 0.65rem;
+  }
+}
+
+
+.kullanici-tablosu {
+  margin-top: 32px;
+  padding: 0 24px;
+}
+
+.bolum-baslik {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.user-table thead {
+  background-color: #f5f5f5;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.user-table th {
+  font-weight: 600;
+}
+
+.user-table tbody tr:hover {
+  background-color: #fff5fb;  
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.status-active {
+  background-color: #e6ffed;
+  color: #1b7f3b;
+}
+
+.status-pending {
+  background-color: #fff7e0;
+  color: #946200;
+}
+
+.status-banned {
+  background-color: #ffe6e6;
+  color: #b30021;
+}
+
+
+@media (max-width: 768px) {
+
+  .user-table thead {
+    display: none;                
+  }
+
+  .user-table,
+  .user-table tbody,
+  .user-table tr,
+  .user-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .user-table tr {
+    margin-bottom: 16px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .user-table td {
+    border-bottom: 1px solid #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .user-table td:last-child {
+    border-bottom: none;
+  }
+
+  .user-table td::before {
+    content: attr(data-label);    
+    font-weight: 600;
+    margin-right: 12px;
+    color: #666;
+  }
+}
+
+
 
 
 

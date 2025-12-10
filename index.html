@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,82 +11,138 @@
 </head>
 
 <body>
-    
+
 
 
     <div class="layout">
-    <div class="container">
-<img class="image"  src="dashboard.jpg">
-    <h3>Hira Dashboard</h3>
+        <div class="container">
+            <img class="image" src="dashboard.jpg">
+            <h3>Hira Dashboard</h3>
 
-       <ul>
-        <li>Dashboard</li>
-        <li>Users</li>
-        <li>Reports</li>
-        <li>Setting</li>
-      </ul>
+            <ul>
+                <li>Dashboard</li>
+                <li>Users</li>
+                <li>Reports</li>
+                <li>Setting</li>
+            </ul>
 
-
-    </div>
-
-    <div class="main">
-
-        <header class="navbar">
-        <input type="text" placeholder="arayacağınız ögeyi giriniz">
-        
-        <div class="avatarvebildirim">
-
-            <button class="bildirim">🔔</button>
-
-            <button class="avatarbuton">
-                 <span class="avatar">H</span>
-            </button>
 
         </div>
 
-        </header>
+        <div class="main">
 
-        <main class="content">
+            <header class="navbar">
+                <input type="text" placeholder="arayacağınız ögeyi giriniz">
 
-        <section class="kartlar">
+                <div class="avatarvebildirim">
 
-            <div class="kart">
-                <p class="kart-basligi">Total Users</p>
-                <p class="kart-degeri">1,245</p>
-                <p class="kart-icerigi">+8% bu hafta</p>
-            </div>
+                    <button class="bildirim">🔔</button>
 
-            <div class="kart">
-                <p class="kart-basligi">Active Users</p>
-                <p class="kart-degeri">532</p>
-                <p class="kart-icerigi">Şuanda çevrimiçi</p>
-            </div>
+                    <button class="avatarbuton">
+                        <span class="avatar">H</span>
+                    </button>
 
-            <div class="kart">
-                <p class="kart-basligi">Monthly Revenue</p>
-                <p class="kart-degeri">$12,430</p>
-                <p class="kart-icerigi">Son 30 gün</p>
-            </div>
+                </div>
 
-            <div class="kart">
-                <p class="kart-basligi">Support Tickets</p>
-                <p class="kart-degeri">27</p>
-                <p class="kart-icerigi">5 açık</p>
-            </div>
+            </header>
 
-        </section>
+            <main class="content">
 
-       
+                <section class="kartlar">
 
-    </main>
+                    <div class="kart">
+                        <p class="kart-basligi">Total Users</p>
+                        <p class="kart-degeri">1,245</p>
+                        <p class="kart-icerigi">+8% bu hafta</p>
+                    </div>
 
+                    <div class="kart">
+                        <p class="kart-basligi">Active Users</p>
+                        <p class="kart-degeri">532</p>
+                        <p class="kart-icerigi">Şuanda çevrimiçi</p>
+                    </div>
+
+                    <div class="kart">
+                        <p class="kart-basligi">Monthly Revenue</p>
+                        <p class="kart-degeri">$12,430</p>
+                        <p class="kart-icerigi">Son 30 gün</p>
+                    </div>
+
+                    <div class="kart">
+                        <p class="kart-basligi">Support Tickets</p>
+                        <p class="kart-degeri">27</p>
+                        <p class="kart-icerigi">5 açık</p>
+                    </div>
+
+                </section>
+
+                <section class="grafik-alani">
+
+                    <h4 class="grafik-baslik">Monthly Users</h4>
+
+                    <div class="grafik">
+                        <div class="bar" style="height: 40%">Jan</div>
+                        <div class="bar" style="height: 60%">Feb</div>
+                        <div class="bar" style="height: 80%">Mar</div>
+                        <div class="bar" style="height: 50%">Apr</div>
+                        <div class="bar" style="height: 70%">May</div>
+                        <div class="bar" style="height: 65%">Jun</div>
+                    </div>
+
+                </section>
+
+
+                <section class="kullanici-tablosu">
+                    <h2 class="bolum-baslik">Users</h2>
+
+                    <table class="user-table">
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Email</th>
+                                <th>Status</th>
+                                <th>Join Date</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td data-label="User">Ali Veli</td>
+                                <td data-label="Email">ali@example.com</td>
+                                <td data-label="Status">
+                                    <span class="status status-active">Active</span>
+                                </td>
+                                <td data-label="Join Date">2025-01-10</td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="User">Ayşe Yılmaz</td>
+                                <td data-label="Email">ayse@example.com</td>
+                                <td data-label="Status">
+                                    <span class="status status-pending">Pending</span>
+                                </td>
+                                <td data-label="Join Date">2025-02-03</td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="User">Mehmet Demir</td>
+                                <td data-label="Email">mehmet@example.com</td>
+                                <td data-label="Status">
+                                    <span class="status status-banned">Banned</span>
+                                </td>
+                                <td data-label="Join Date">2024-11-21</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                
+
+            </main>
+
+        </div>
     </div>
-    </div>
-    
-    
-
-    
-    
 
 </body>
+
 </html>
