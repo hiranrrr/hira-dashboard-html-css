@@ -87,7 +87,7 @@ ul{
 .avatar {
   width: 32px;
   height: 32px;
-  background-color: gray;
+  background-color: rgb(111, 3, 54);
   color: white;
   border-radius: 50px;
   display: flex;
@@ -148,6 +148,80 @@ background-color: lightgray;
     width: 60%;
   }
 }
+
+.content {
+  padding: 24px;              
+  background-color: #fdfdfd;  
+}
+
+.kartlar {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)); 
+  gap: 20px;                                         
+}
+
+.kart {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);      
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kart-basligi {
+  font-size: 0.9rem;
+  color: #888;
+  margin: 0;
+}
+
+.kart-degeri {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.kart-icerigi {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .kartlar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .kartlar {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grafik-alani {
+  margin-top: 40px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.grafik-baslik {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.grafik {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  height: 200px;
+}
+
+
+
 
 
 
