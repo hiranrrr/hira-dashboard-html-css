@@ -33,7 +33,77 @@ ul{
     padding-left: 0; 
 }
 
-header{
-    margin-left: 180px;
-    top: 30px;
+
+.layout{
+    display: flex;
 }
+
+.main{
+    flex: 1;
+    margin-top: 0;
+}
+
+.navbar{
+ 
+  height: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #ddd;
+  margin-top: 20px;
+
+}
+
+.navbar input{
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left:900px;
+  width: 250px;
+}
+
+.navbar input:focus {
+  outline: none;
+  border-width: 3px;
+  border-color: deeppink;
+}
+
+
+.avatarvebildirim{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  background-color: gray;
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bildirim,
+.avatarbuton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;  
+  
+}
+
+.bildirim:hover,
+.avatarbuton:hover{
+background-color: lightgray;
+} 
+
+
+
+
