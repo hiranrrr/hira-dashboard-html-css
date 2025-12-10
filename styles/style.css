@@ -1,6 +1,12 @@
 body {
-     margin: 0; 
+     margin: 0;
+     padding: 0;
+  overflow-x: hidden; 
     }
+
+*{
+    box-sizing: border-box;
+}
 
 .image{
     width: 50px;
@@ -46,7 +52,7 @@ ul{
 .navbar{
  
   height: 60px;
-
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,7 +68,6 @@ ul{
   padding: 8px 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-left:900px;
   width: 250px;
 }
 
@@ -96,13 +101,54 @@ ul{
   border: none;
   padding: 0;
   cursor: pointer;  
-  
+
 }
 
 .bildirim:hover,
 .avatarbuton:hover{
 background-color: lightgray;
 } 
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .navbar input {
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  ul {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  li {
+    margin: 10px 0;
+    padding: 10px 5px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .navbar {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar input {
+    width: 60%;
+  }
+}
+
 
 
 
